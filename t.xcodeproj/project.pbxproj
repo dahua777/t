@@ -14,6 +14,9 @@
 		D90C2D061D2F29510010250C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90C2D041D2F29510010250C /* LaunchScreen.storyboard */; };
 		D90C2D111D2F29510010250C /* tTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C2D101D2F29510010250C /* tTests.swift */; };
 		D90C2D1C1D2F29510010250C /* tUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C2D1B1D2F29510010250C /* tUITests.swift */; };
+		D90C2D2A1D2F2A230010250C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D90C2D291D2F2A230010250C /* libsqlite3.0.tbd */; };
+		D90C2D2D1D2F2A780010250C /* SQLiteDB in Resources */ = {isa = PBXBuildFile; fileRef = D90C2D2C1D2F2A780010250C /* SQLiteDB */; };
+		D90C2D2F1D2F2A840010250C /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = D90C2D2E1D2F2A840010250C /* data.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,10 @@
 		D90C2D171D2F29510010250C /* tUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90C2D1B1D2F29510010250C /* tUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tUITests.swift; sourceTree = "<group>"; };
 		D90C2D1D1D2F29510010250C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90C2D291D2F2A230010250C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D90C2D2B1D2F2A3A0010250C /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		D90C2D2C1D2F2A780010250C /* SQLiteDB */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SQLiteDB; sourceTree = "<group>"; };
+		D90C2D2E1D2F2A840010250C /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90C2D2A1D2F2A230010250C /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,9 @@
 		D90C2CEF1D2F29510010250C = {
 			isa = PBXGroup;
 			children = (
+				D90C2D291D2F2A230010250C /* libsqlite3.0.tbd */,
+				D90C2D2E1D2F2A840010250C /* data.db */,
+				D90C2D2C1D2F2A780010250C /* SQLiteDB */,
 				D90C2CFA1D2F29510010250C /* t */,
 				D90C2D0F1D2F29510010250C /* tTests */,
 				D90C2D1A1D2F29510010250C /* tUITests */,
@@ -103,6 +114,7 @@
 				D90C2D021D2F29510010250C /* Assets.xcassets */,
 				D90C2D041D2F29510010250C /* LaunchScreen.storyboard */,
 				D90C2D071D2F29510010250C /* Info.plist */,
+				D90C2D2B1D2F2A3A0010250C /* Header.h */,
 			);
 			path = t;
 			sourceTree = "<group>";
@@ -229,7 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90C2D2D1D2F2A780010250C /* SQLiteDB in Resources */,
 				D90C2D061D2F29510010250C /* LaunchScreen.storyboard in Resources */,
+				D90C2D2F1D2F2A840010250C /* data.db in Resources */,
 				D90C2D031D2F29510010250C /* Assets.xcassets in Resources */,
 				D90C2D011D2F29510010250C /* Main.storyboard in Resources */,
 			);
@@ -405,6 +419,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = t.t;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/20141105045l/Desktop/t/t/t/Header.h;
 			};
 			name = Debug;
 		};
@@ -416,6 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = t.t;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/20141105045l/Desktop/t/t/t/Header.h;
 			};
 			name = Release;
 		};
